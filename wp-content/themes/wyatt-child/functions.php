@@ -8,6 +8,7 @@ if ( ! function_exists( 'wyatt_child_theme_enqueue_scripts' ) ) {
 		$main_style = 'wyatt-main';
 
 		wp_enqueue_style( 'wyatt-child-style', get_stylesheet_directory_uri() . '/style.css', array( $main_style ) );
+		wp_enqueue_style( 'wyatt-child-style-bws', get_stylesheet_directory_uri() . '/dist/css/main.css' );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'wyatt_child_theme_enqueue_scripts' );
